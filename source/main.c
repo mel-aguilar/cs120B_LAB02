@@ -26,7 +26,7 @@ int main(void) {
 
     /* Insert your solution below */
     while (1) {
-	cntavail = 4;
+	
 	tmpA0 = PINA & 0x01;
 	tmpA1 = PINA & 0x02;
 	tmpA2 = PINA & 0x04;
@@ -50,7 +50,7 @@ int main(void) {
 	if(cntavail == 0) {
 		PORTC = 0x80;
 	}
-		
+	cntavail = 4;	
     }
     return 1;
 }
