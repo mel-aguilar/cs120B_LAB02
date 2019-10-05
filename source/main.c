@@ -19,18 +19,24 @@ int main(void) {
 
 	unsigned char tmpB = 0x00; 
 	unsigned char tmpA = 0x00; 	
+	unsigned char tmpA = 0x00;  
 
 
     /* Insert your solution below */
     while (1) {
 	tmpA = PINA & 0x01;
+	tmpB = PINA & 0x02;
 	
-	if (tmpA == 0x01) {
-		tmpB = (tmpB & 0xFC) | 0x01; 
+	if (tmpA == 0x01 && tmpB == 0x00) {
+		//tmpB = (tmpB & 0xFC) | 0x01; 
+		tmpC = (tmpC 0xFC) | (0x01);
 	} else {
-		tmpB = (tmpB & 0xFC) | 0x02; 
+		//tmpB = (tmpB & 0xFC) | 0x02; 
+		tmpC = (tmpC 0xFC) | (0x01);
+
 	}
-	PORTB = tmpB;	
+	//PORTB = tmpB;	
+	 PORTC = tmpC;	
     }
     return 1;
 }
