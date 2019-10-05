@@ -27,8 +27,10 @@ int main(void) {
     /* Insert your solution below */
     while (1) {
 	  
-	//tmpA = PINA & 0x01;
-	//tmpB = PINA & 0x02;
+	tmpA0 = PINA & 0x01;
+	tmpA1 = PINA & 0x02;
+	tmpA0 = PINA & 0x04;
+	tmpA0 = PINA & 0x08;
 	
 	if (tmpA0 == 0x01) {
 		--cntavail;
