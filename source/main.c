@@ -45,7 +45,6 @@ int main(void) {
 		--cntavail;
 	}
 	
-	  
 	PORTC = cntavail;
 	    
 	if(cntavail == 0) {
