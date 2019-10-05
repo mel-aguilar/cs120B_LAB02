@@ -46,8 +46,7 @@ int main(void) {
         }
 
         PORTC = cntavail;
-
-	    cntavail = 4;	
+	cntavail = 4;	
   }
     return 1;
 }
