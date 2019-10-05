@@ -29,8 +29,8 @@ int main(void) {
 	  
 	tmpA0 = PINA & 0x01;
 	tmpA1 = PINA & 0x02;
-	tmpA0 = PINA & 0x04;
-	tmpA0 = PINA & 0x08;
+	tmpA2 = PINA & 0x04;
+	tmpA3 = PINA & 0x08;
 	
 	if (tmpA0 == 0x01) {
 		--cntavail;
